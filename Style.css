@@ -48,7 +48,6 @@ input {
     flex: 1;
     border: none;
     outline: none;
-    /* border-style: groove; */
     padding: 10px;
     font-size: large;
     margin: 10px;
@@ -66,7 +65,7 @@ button {
     /* background: rgb(87, 87, 179); */
     /* color: white; */
     background: red;
-    color: white; /* Changed text color to white */
+    color: white; 
 }
 
 ul li {
@@ -75,7 +74,7 @@ ul li {
     padding: 10px 8px 12px 50px;
     user-select: none;
     list-style: none;
-    position: relative; /* Added for positioning the span element */
+    position: relative; 
 }
 
 ul li::before {
@@ -84,7 +83,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(images/unchecked.png);
+    background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -97,14 +96,14 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url(images/red.png);
+    background-image: url(redChecked.png);
 }
 
 ul li span {
     display: block;
     position: absolute;
     right: 0;
-    top: 0; /* Adjusted the top positioning */
+    top: 0; 
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -112,12 +111,12 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50px;
-    cursor: pointer; /* Added cursor style */
+    cursor: pointer; 
 }
 
 ul li span:hover {
     background: red;
-    color: white; /* Added text color change on hover */
+    color: white; 
 }
 #end{
     background:black;
