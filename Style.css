@@ -1,0 +1,128 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding: 10px;
+}
+
+/* h1 {
+    color: white;
+} */
+
+.todo-app {
+    width: 100%;
+    /* align-items: center; */
+    /* background-color: white; */
+    background:violet;
+    max-width: 540px;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+}
+
+.todo-app h1 {
+    color: red;
+    /* color: black; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h1 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #edeef0;
+    /* background: rgba(255, 255, 255, 0.072); */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    /* border-style: groove; */
+    padding: 10px;
+    font-size: large;
+    margin: 10px;
+    background: transparent;
+    /* border-radius: 10px; */
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 40px;
+    /* background: rgb(87, 87, 179); */
+    /* color: white; */
+    background: red;
+    color: white; /* Changed text color to white */
+}
+
+ul li {
+    font-size: 19px;
+    cursor: pointer;
+    padding: 10px 8px 12px 50px;
+    user-select: none;
+    list-style: none;
+    position: relative; /* Added for positioning the span element */
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/red.png);
+}
+
+ul li span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; /* Adjusted the top positioning */
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: blueviolet;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer; /* Added cursor style */
+}
+
+ul li span:hover {
+    background: red;
+    color: white; /* Added text color change on hover */
+}
+#end{
+    background:black;
+    color:white;
+    /* font-size: 15px; */
+    font-size: large;
+    text-align: end;
+}
